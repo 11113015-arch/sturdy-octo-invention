@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生成式 AI 優化版 - 智能待辦事項卡</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="todo-card">
+        <header>
+            <h1>智能待辦事項</h1>
+            <p class="subtitle">自動同步儲存與定時瀏覽器提醒</p>
+        </header>
+        
+        <div class="input-group">
+            <input type="text" id="todo-input" placeholder="想要準備做點什麼呢？">
+            <input type="datetime-local" id="todo-time">
+            <button id="add-btn">新 增</button>
+        </div>
+
+        <div class="filter-tabs">
+            <span class="active">全部清單</span>
+        </div>
+
+        <ul id="todo-list"></ul>
+    </div>
+</body>
+</html>
